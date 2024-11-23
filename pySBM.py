@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from pulp import *
 
-class pySBM:
+class SBM_VRS:
     def __init__(self, input_file_name, output_file_name, n_output):
         self.input_file_name = input_file_name
         self.output_file_name = output_file_name
@@ -154,6 +154,6 @@ if __name__ == "__main__":
     output_file_name = "output.csv"  # Replace with your desired output file
     n_output = 1  # Specify the number of outputs
     
-    py_sbm = pySBM(input_file_name=input_file_name, output_file_name=output_file_name, n_output=n_output)
-    py_sbm.Solve()
+    sbm_vrs = SBM_VRS(input_file_name=input_file_name, output_file_name=output_file_name, n_output=n_output)
+    sbm_vrs.Solve()
     print(f"Results saved to {output_file_name}")
