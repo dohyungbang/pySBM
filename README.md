@@ -1,4 +1,4 @@
-# pyEfficiency
+# pySBM
 Slack-Based Model (SBM) for python 
 
 Reference:
